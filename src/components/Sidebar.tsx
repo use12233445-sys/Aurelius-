@@ -1,5 +1,5 @@
 import {
-  BookOpen, CheckSquare, Clock, LayoutDashboard, MessagesSquare, Share2,
+  BookOpen, CheckSquare, Clock, LayoutDashboard, MessagesSquare, Users,
   GraduationCap, X, type LucideIcon,
 } from "lucide-react";
 
@@ -11,7 +11,7 @@ const NAV: { id: ViewId; label: string; icon: LucideIcon }[] = [
   { id: "assignments", label: "Assignments", icon: CheckSquare },
   { id: "focus", label: "Focus Mode", icon: Clock },
   { id: "ai", label: "AI Doubt Solver", icon: MessagesSquare },
-  { id: "share", label: "Classmate Sharing", icon: Share2 },
+  { id: "share", label: "Classmates", icon: Users },
 ];
 
 interface SidebarProps {

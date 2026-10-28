@@ -55,7 +55,6 @@ Deno.serve(async (req: Request) => {
     });
 
     if (!aiRes.ok) {
-      const errText = await aiRes.text().catch(() => "Unknown upstream error");
       return new Response(
         JSON.stringify({ error: `AI service error (${aiRes.status}).` }),
         { status: 502, headers: { ...corsHeaders, "Content-Type": "application/json" } },
