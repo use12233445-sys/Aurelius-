@@ -1,0 +1,4 @@
+project_id = "campus-compass"
+
+[functions.ai-tutor]
+verify_jwt = true
